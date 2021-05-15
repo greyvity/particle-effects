@@ -136,8 +136,8 @@ const tick = () => {
 
   // move the starfield
   if (mouseX > 0) {
-    stars.rotation.x = -mouseY * elapsedTime * 0.0002;
-    stars.rotation.y = -mouseX * elapsedTime * 0.0002;
+    stars.rotation.x = -mouseY * elapsedTime * 0.00015;
+    stars.rotation.y = -mouseX * elapsedTime * 0.00015;
   }
 
   // Render

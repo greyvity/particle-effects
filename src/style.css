@@ -66,6 +66,7 @@ p {
   font-size: 1.3rem;
   font-weight: 400;
   font-family: "Nunito";
+  width: unset;
 }
 
 @media screen and (max-width: 1200px) {
