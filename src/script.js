@@ -20,9 +20,6 @@ const scene = new THREE.Scene();
 const geometry = new THREE.TorusGeometry(0.7, 0.2, 16, 100);
 const particlesGeometry = new THREE.BufferGeometry();
 
-gui.add(geometry, "rotateX");
-gui.add(geometry, "scale");
-
 const particlesCount = 5000;
 const positionArray = new Float32Array(particlesCount * 3);
 

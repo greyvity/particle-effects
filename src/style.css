@@ -49,6 +49,8 @@ h1 {
   font-size: 4rem;
   width: 50vw;
   line-height: 97%;
+  font-weight: 500;
+
   text-align: right;
 }
 
@@ -62,4 +64,59 @@ p {
 p {
   width: 40vw;
   font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Nunito";
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    width: 100%;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-top: -30px;
+    width: 60%;
+  }
+
+  .container {
+    place-content: unset;
+    place-items: center;
+  }
+
+  h1,
+  p {
+    text-align: center;
+    flex-basis: unset;
+    flex-grow: unset;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    margin-top: -50px;
+    width: 100%;
+  }
 }
